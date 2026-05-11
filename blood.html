@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BloodCare - Blood Donor Management System</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="blood.css">
+    </head>
+    <body>
+      <div class="urgent-banner">
+        <span class="pulse"></span>
+        <strong>URGENT:</strong> O-Negative blood type critically needed at City General Hospital &mdash;
+        <a href="#" id="urgent-donate">Donate Now</a>
+      </div>
+      <nav>
+        <div class="nav-brand">
+          <div class="nav-logo">&#9825;</div>
+          <span class="nav-title">BloodCare</span>
+        </div>
+        <span class="hamburger" id="hamb">&#9776;</span>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#" class="active" id="nav-home">Home</a></li>
+          <li><a href="#" id="nav-donate">Donate</a></li>
+          <li><a href="#" id="nav-donors">Donors</a></li>
+          <li><a href="#" id="nav-eligibility">Check Eligibility</a></li>
+          <li><a href="#" id="nav-blood-types">Blood Types</a></li>
+          <li><a href="#" id="nav-log">Login</a></li>
+          <li><a href="#" id="nav-cta" class="nav-cta">Register</a></li>
+        </ul>
+      </nav>
+      <div class="page active" id="page-home">
+        <div class="hero">
+          <h1>Save Lives.<br>Donate Blood Today.</h1>
+          <p>Every 2 seconds someone needs blood. One donation can save up to 3 lives. Be the reason someone goes home to their family.</p>
+        </div>
+        <div class="stats-bar">
+          <div class="stat-item">
+            <div class="stat-num">1,284</div>
+            <div class="stat-label">Registered Donors</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">847</div>
+            <div class="stat-label">Lives Saved</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">38K</div>
+            <div class="stat-label">Units Collected</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">12</div>
+            <div class="stat-label">Blood Centers</div>
+          </div>
+        </div>
+        <div class="container section">
+          <div class="section-title">Why Donate Blood?</div>
+          <p class="section-sub">Blood can't be manufactured &mdash; it can only come from generous donors like you.</p>
+          <div class="cards-grid">
+            <div class="card">
+              <div class="card-icon">&#128155;</div>
+              <h3>Save up to 3 Lives</h3>
+              <p>One whole blood donation is separated into red cells, plasma, and platelets — each saving a different patient.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">&#128197;</div>
+              <h3>Donate Every 56 Days</h3>
+              <p>Your body replenishes red blood cells within weeks. You can donate whole blood every 8 weeks, platelets every 7 days.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">&#127973;</div>
+              <h3>Free Health Checkup</h3>
+              <p>Each donation includes a free mini health screening: blood pressure, pulse, hemoglobin, and disease testing.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">&#127919;</div>
+              <h3>Quick & Safe</h3>
+              <p>The entire donation process takes about 45–60 minutes. The actual blood draw takes only 8–10 minutes.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">&#128200;</div>
+              <h3>Heart Health Benefit</h3>
+              <p>Regular donation may help reduce iron overload in the blood, potentially reducing the risk of heart disease.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">&#128101;</div>
+              <h3>Join a Community</h3>
+              <p>Become part of a global community of 118 million annual donors making a real difference in the world.</p>
+            </div>
+          </div>
+        </div>
+        <div id="q">
+          <div class="container">
+            <div class="section-title">Frequently Asked Questions</div>
+            <p class="section-sub">Answers to the most common questions about blood donation.</p>
+            <div class="faq-item">
+              <div class="faq-q">
+                Who can donate blood?
+                <span class="faq-arrow">&#8964;</span>
+              </div>
+              <div class="faq-a">Generally, you can donate if you are between 17–65 years old, weigh at least 50 kg, are in good health, and haven't donated in the last 56 days. Use our Eligibility Checker to find out for sure.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">
+                Does donating blood hurt?
+                <span class="faq-arrow">&#8964;</span>
+              </div>
+              <div class="faq-a">Most donors feel a quick pinch when the needle is inserted, then little or no discomfort during the 8–10 minute donation. You may feel slightly light-headed afterward, which passes quickly with water and a light snack.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">
+                How long does the full process take?
+                <span class="faq-arrow">&#8964;</span>
+              </div>
+              <div class="faq-a">Plan for about 45–60 minutes total: registration (10 min) + health history & mini physical (10 min) + donation (10 min) + refreshments & rest (15 min). First-time donors may take slightly longer.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">
+                How often can I donate?
+                <span class="faq-arrow">&#8964;</span>
+              </div>
+              <div class="faq-a">Whole blood: every 56 days (8 weeks). Platelets: every 7 days, up to 24 times per year. Plasma: every 28 days. Double red cells: every 112 days.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">
+                What should I do before donating?
+                <span class="faq-arrow">&#8964;</span>
+              </div>
+              <div class="faq-a">Drink plenty of water the day before and day of donation. Eat a healthy meal beforehand (avoid fatty foods). Get a good night's sleep. Wear comfortable clothing with sleeves that can be rolled up.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="page-donate">
+        <div id="reg">
+          <h1 id="reg1">Register as a Blood Donor</h1>
+          <p id="com">Complete the form below to become a registered donor in our system.</p>
+        </div>
+        <div class="container section">
+          <div class="form-card">
+            <h2 id="pi">Personal Information</h2>
+            <p id="req">Fields marked <span class="required">*</span> are required.</p>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name <span class="required">*</span></label>
+                <input type="text" id="fname" placeholder="John">
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name <span class="required">*</span></label>
+                <input type="text" id="lname" placeholder="Doe">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="dob">Date of Birth <span class="required">*</span></label>
+                <input type="date" id="dob">
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender <span class="required">*</span></label>
+                <select id="gender">
+                  <option value="">Select gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Non-binary</option>
+                  <option>Prefer not to say</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bloodtype">Blood Type <span class="required">*</span></label>
+                <select id="bloodtype">
+                  <option value="">Select blood type</option>
+                  <option>A+</option>
+                  <option>A-</option>
+                  <option>B+</option>
+                  <option>B-</option>
+                  <option>AB+</option>
+                  <option>AB-</option>
+                  <option>O+</option>
+                  <option>O-</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="weight">Weight (kg) <span class="required">*</span></label>
+                <input type="number" id="weight" placeholder="e.g. 70" min="50" max="200">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" placeholder="+91 98765 43210">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="john@email.com">
+              </div>
+            </div>
+            <div class="form-group">
+              <label  for="city">City / Location <span class="required">*</span></label>
+              <input type="text" id="city" placeholder="e.g. Chennai">
+            </div>
+            <div class="form-group">
+              <label for="lastdonate">Last Donation Date</label>
+              <input type="date" id="lastdonate">
+            </div>
+            <div class="form-group">
+              <label for="notes">Medical Conditions / Notes</label>
+              <textarea id="notes" placeholder="Any medications, conditions, or notes for the medical team..."></textarea>
+            </div>
+            <div id="regbtn">
+              <button class="btn btn-red" id="registerBtn" type="button">Register as Donor</button>
+              <button class="btn" id="cls" type="button">Clear Form</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="page-donors">
+        <div id="sea">
+          <h1 id="seh1">Donor Directory</h1>
+          <p id="sep">Search and manage registered blood donors.</p>
+        </div>
+        <div class="container section">
+          <div class="table-wrap">
+            <div class="table-header">
+              <strong id="red">Registered Donors</strong>
+              <div id="group">
+                <select id="filterBlood">
+                  <option value="">All Blood Types</option>
+                  <option>A+</option>
+                  <option>A-</option>
+                  <option>B+</option>
+                  <option>B-</option>
+                  <option>AB+</option>
+                  <option>AB-</option>
+                  <option>O+</option>
+                  <option>O-</option>
+                </select>
+                <div class="search-box">
+                  <span>&#128269;</span>
+                  <input type="text" id="searchDonor" placeholder="Search name or city...">
+                </div>
+              </div>
+            </div>
+            <div id="tab">
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Blood Type</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Phone</th>
+                    <th>Last Donated</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="donorTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="page-eligibility">
+        <div id="el">
+          <h1 id="el_c">Eligibility Checker</h1>
+          <p id="el_f">Find out if you're eligible to donate blood today.</p>
+        </div>      
+        <div class="container section">
+          <div class="eligibility-wrap">
+            <div class="form-card">
+              <h3 id="el_h3">Answer a few questions</h3>
+              <div class="form-group">
+                <label>Your Age</label>
+                <input type="number" id="eli-age" placeholder="e.g. 25" min="10" max="80">
+              </div>
+              <div class="form-group">
+                <label>Weight (kg)</label>
+                <input type="number" id="eli-weight" placeholder="e.g. 65">
+              </div>
+              <div class="form-group">
+                <label>Last Donation (months ago)</label>
+                <input type="number" id="eli-lastdonate" placeholder="e.g. 4 (0 if never donated)" min="0">
+              </div>
+              <div class="form-group">
+                <label>Are you currently on any medication?</label>
+                <select id="eli-meds">
+                  <option value="">Select</option>
+                  <option value="no">No</option>
+                  <option value="minor">Minor (vitamins, etc.)</option>
+                  <option value="major">Yes, prescription drugs</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Do you have any major illness?</label>
+                <select id="eli-illness">
+                  <option value="">Select</option>
+                  <option value="no">No major illness</option>
+                  <option value="cold">Minor cold / flu currently</option>
+                  <option value="chronic">Chronic condition (diabetes, heart, etc.)</option>
+                  <option value="hiv">HIV/AIDS or Hepatitis</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Have you had a tattoo/piercing recently (within 6 months)?</label>
+                <select id="eli-tattoo">
+                  <option value="">Select</option>
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+              </div>
+            </div>
+            <div class="eligibility-result" id="eligResult">
+              <div class="result-icon pending" id="resultIcon">&#10067;</div>
+              <div class="result-title" id="resultTitle">Fill in the form</div>
+              <div class="result-msg" id="resultMsg">Answer the questions on the left to check your eligibility to donate blood.</div>
+              <ul class="checklist" id="resultChecklist"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="page-blood-types">
+        <div id="typo">
+          <h1 id="typo_h1">Blood Type Guide</h1>
+          <p id="typo_p">Click on any blood type to see compatibility details.</p>
+        </div>
+        <div class="container section">
+          <div class="section-title">Select Your Blood Type</div>
+          <p class="section-sub">Learn who can receive your blood and who can donate to you.</p>
+          <div class="blood-grid">
+            <div class="blood-card" id="a_plus">
+              <div class="blood-type-label">A+</div>
+              <div class="blood-compat">~35.7% of people</div>
+            </div>
+            <div class="blood-card" id="a_minus">
+              <div class="blood-type-label">A-</div>
+              <div class="blood-compat">~6.3% of people</div>
+            </div>
+            <div class="blood-card" id="b_plus">
+              <div class="blood-type-label">B+</div>
+              <div class="blood-compat">~8.5% of people</div>
+            </div>
+            <div class="blood-card" id="b_minus">
+              <div class="blood-type-label">B-</div>
+              <div class="blood-compat">~1.5% of people</div>
+            </div>
+            <div class="blood-card" id="ab_plus">
+              <div class="blood-type-label">AB+</div>
+              <div class="blood-compat">~3.4% of people</div>
+            </div>
+            <div class="blood-card" id="ab_minus">
+              <div class="blood-type-label">AB-</div>
+              <div class="blood-compat">~0.6% of people</div>
+            </div>
+            <div class="blood-card" id="o_plus">
+              <div class="blood-type-label">O+</div>
+              <div class="blood-compat">~37.4% of people</div>
+            </div>
+            <div class="blood-card" id="o_minus">
+              <div class="blood-type-label">O-</div>
+              <div class="blood-compat">~6.6% — Universal Donor</div>
+            </div>
+          </div>
+          <div id="bloodTypeDetail">
+            <div id="doncan">
+              <h2 id="btTitle"></h2>
+              <div id="btt">
+                <div>
+                  <p id="don">Can Donate To</p>
+                  <div id="btDonateTo"></div>
+                </div>
+                <div>
+                  <p id="rec">Can Receive From</p>
+                  <div id="btReceiveFrom"></div>
+                </div>
+              </div>
+              <div id="btNote"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="toast" id="toast"></div>
+      <div class="page" id="page-login">
+        <div class="container section">
+          <div class="form-card">
+            <h2>Admin Login</h2>
+            <div class="form-group">
+              <label for="loginUser">Username</label>
+              <input type="text" id="loginUser">
+            </div>
+            <div class="form-group">
+              <label for="loginPass">Password</label>
+              <input type="password" id="loginPass">
+            </div>
+            <button id="login"  type="button" class="btn btn-red">Login</button>
+            <button id="logout"  type="button" class="btn btn-red">Logout</button>
+          </div>
+        </div>
+      </div>
+      <div id="chatbot">
+        <div id="chat-header">💬 Help</div>
+        <div id="chat-body"></div>
+        <input type="text" id="chat-input" placeholder="Ask something...">
+      </div>
+      <button id="chat-toggle">💬</button>
+      <footer>
+        <strong>BloodCare &mdash; Blood Donors Assistant</strong><br>
+        <span id="help">Saving lives one donation at a time &bull; Emergency: <strong>1800-XXX-XXXX</strong></span>
+      </footer>
+      <script src="blood.js"></script>
+    </body>
+</html>
